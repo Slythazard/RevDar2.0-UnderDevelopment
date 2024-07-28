@@ -14,7 +14,7 @@ from werkzeug.utils import secure_filename
 model = pickle.load(open("RegModel.pkl", 'rb'))
 app = Flask(__name__)
 
-UPLOAD_FOLDER = 'C:\\Users\\shres\\Documents\\Flask-tutorial\\static'
+UPLOAD_FOLDER = 'static'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 ALLOWED_EXTENSIONS = set(['csv', 'xlsx', 'jpg', 'jpeg', 'gif'])
